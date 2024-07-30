@@ -1,13 +1,11 @@
 {
-  "compatibilityLevel": "JAVA_8",
-  "minVersion": "0.7",
+  "required": true,
   "package": "dev.microcontrollers.betternightvision.mixin",
-  "refmap": "mixins.betternightvision.refmap.json",
-  "injectors": {
-    "maxShiftBy": 5
-  },
+  "compatibilityLevel": "JAVA_17",
   "client": [
-    "EntityRendererMixin"
+    "GameRendererMixin"
   ],
-  "verbose": true
+  "injectors": {
+    "defaultRequire": 1
+  }
 }

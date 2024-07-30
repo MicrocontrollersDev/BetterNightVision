@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "betternightvision",
+  "version": "${version}",
+  "name": "Better Night Vision",
+  "description": "Allows slight customization of the night vision effect, such as disabling it entirely and changing the warning flashing to be a smooth fade out.",
+  "authors": [
+    "Microcontrollers"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/betternightvision",
+    "sources": "https://github.com/MicrocontrollersDev/BetterNightVision",
+    "issues": "https://github.com/MicrocontrollersDev/BetterNightVision/issues"
+  },
+  "license": "LGPLv3",
+  "icon": "assets/betternightvision/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "dev.microcontrollers.betternightvision.BetterNightVision"
+    ],
+    "modmenu": [
+      "dev.microcontrollers.betternightvision.config.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "mixins.betternightvision.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14",
+    "minecraft": ">=1.19.4",
+    "java": ">=17",
+    "fabric-api": "*",
+    "yet_another_config_lib_v3": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/rejfv9kFJj",
+        "modmenu.modrinth": "https://modrinth.com/mod/betternightvision"
+      },
+      "update_checker": true
+    }
+  }
+}
