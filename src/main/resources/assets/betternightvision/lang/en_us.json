@@ -1,0 +1,7 @@
+{
+  "better-night-vision.better-night-vision": "Better Night Vision",
+  "better-night-vision.disable-night-vision": "Disable Night Vision",
+  "better-night-vision.disable-night-vision.description": "Removes the night vision effect entirely.",
+  "better-night-vision.cleaner-night-vision-decay": "Cleaner Night Vision Decay",
+  "better-night-vision.cleaner-night-vision-decay.description": "Makes the night vision loss a gradual effect instead of an on and off flicker."
+}
