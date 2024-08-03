@@ -22,19 +22,18 @@ public class BetterNightVisionConfig {
     @SerialEntry public boolean disableNightVision = false;
     @SerialEntry public boolean cleanerNightVision = true;
 
-    @SuppressWarnings("deprecation")
     public static Screen configScreen(Screen parent) {
         return YetAnotherConfigLib.create(CONFIG, ((defaults, config, builder) -> builder
                 .title(Text.translatable("better-night-vision.better-night-vision"))
                 .category(ConfigCategory.createBuilder()
                         .name(Text.translatable("better-night-vision.better-night-vision"))
-                        .option(Option.createBuilder(boolean.class)
+                        .option(Option.<Boolean>createBuilder()
                                 .name(Text.translatable("better-night-vision.disable-night-vision"))
                                 .description(OptionDescription.of(Text.translatable("better-night-vision.disable-night-vision.description")))
                                 .binding(defaults.disableNightVision, () -> config.disableNightVision, newVal -> config.disableNightVision = newVal)
                                 .controller(TickBoxControllerBuilder::create)
                                 .build())
-                        .option(Option.createBuilder(boolean.class)
+                        .option(Option.<Boolean>createBuilder()
                                 .name(Text.translatable("better-night-vision.cleaner-night-vision-decay"))
                                 .description(OptionDescription.of(Text.translatable("better-night-vision.cleaner-night-vision-decay.description")))
                                 .binding(defaults.cleanerNightVision, () -> config.cleanerNightVision, newVal -> config.cleanerNightVision = newVal)
