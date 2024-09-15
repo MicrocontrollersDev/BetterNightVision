@@ -1,3 +1,5 @@
+# Moved to https://codeberg.org/MicrocontrollersDev/BetterNightVision
+
 # Better Night Vision
 
 [![Powered by OneConfig](https://github.com/MicrocontrollersDev/BetterNightVision/assets/66657148/85d5797e-5986-4afa-87f9-b8b0f3c16bb2)](https://modrinth.com/mod/oneconfig)
